@@ -8,6 +8,7 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<jta-data-source></jta-data-source>
 		<class>no.hvl.dat109.spiller.Spiller</class>
+		<class>no.hvl.dat109.yatzy.Yatzy</class>
 		<properties>
 			<property name="eclipselink.weaving" value="false" />
 		</properties>

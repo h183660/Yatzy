@@ -1,5 +1,7 @@
 package no.hvl.dat109.yatzy;
 
+import com.google.gson.Gson;
+
 public class Brett {
 
 	private String[] rader = { "Enere: ", "Toere:", "Treere:", "Firere:", "Femmere:", "Seksere:", "Sum:", "Bonus:",
@@ -55,6 +57,11 @@ public class Brett {
 		}
 
 		return brettString;
+	}
+	
+
+	public String toJson() {
+		return new Gson().toJson(brett);
 	}
 
 }

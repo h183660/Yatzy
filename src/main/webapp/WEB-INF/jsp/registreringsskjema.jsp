@@ -58,5 +58,10 @@
           <button type="submit">Registrer</button>
         </fieldset>
       </form>
+      
+      	<h2>
+		Har du allerede bruker? <a href="LoggInnServlet">Logg Inn</a>
+	</h2>
+
   </body>
 </html>

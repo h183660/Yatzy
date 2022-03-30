@@ -44,5 +44,9 @@
 		</fieldset>
 	</form>
 
+	<h2>
+	Har du ikke bruker? <a href="RegistrerServlet">Registrer deg</a>
+	</h2>
+
 </body>
 </html>

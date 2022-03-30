@@ -56,7 +56,7 @@ public class RegistrerServlet extends HttpServlet {
 			spillerDao.lagre(spiller);
 
 			// Sende videre til spillerlisten
-			response.sendRedirect("SpillerListeServlet");
+			response.sendRedirect("LandingsSideServlet");
 
 			// Bruker eksisterer allerede i databasen
 		} else if (erRegistrert) {

@@ -51,7 +51,7 @@ public class LoggInnServlet extends HttpServlet {
 				sesjon.setAttribute("spiller", spiller);
 
 				// Sender den ferdig innloggede spilleren videre til å velge yatzy spill
-				response.sendRedirect("SpillerListeServlet");
+				response.sendRedirect("LandingsSideServlet");
 
 			} else { // Passord er feil
 

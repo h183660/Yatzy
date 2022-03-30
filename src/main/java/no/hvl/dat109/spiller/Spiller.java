@@ -1,12 +1,16 @@
 package no.hvl.dat109.spiller;
 
+import java.util.Set;
+
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import com.google.gson.Gson;
 import no.hvl.dat109.passord.Passord;
 import no.hvl.dat109.yatzy.Kopp;
+import no.hvl.dat109.yatzy.Yatzy;
 
 @Entity
 @Table(name = "spiller", schema = "yatzy")
@@ -18,6 +22,9 @@ public class Spiller implements Comparable<Spiller> {
 	private String epost;
 	@Embedded
 	private Passord passordhash;
+	
+	@ManyToMany(mappedBy = "spillere")
+	private Set<Yatzy> yatzy;
 
 	public Spiller() {
 
