@@ -19,7 +19,7 @@ public class Tekstbrukergrensesnitt {
   **/
   public static void start(){
     lagSpillere();
-    yatzy = new Yatzy(spillere);
+    yatzy = new Yatzy();
     startSpill();
   }
 
@@ -57,7 +57,7 @@ public class Tekstbrukergrensesnitt {
     //Bonus runde
     
     for(int i = 0; i < spillere.length; i++){
-      yatzy.getBrett().setVerdi(7, i, OppdateringUtility.bonus(OppdateringUtility.sum(i, yatzy.getBrett())));
+      //yatzy.getBrett().setVerdi(7, i, OppdateringUtility.bonus(OppdateringUtility.sum(i, yatzy.getBrett())));
     }
     //Resten av spillet
     for( ; runde < 8+9; runde++){
@@ -80,9 +80,9 @@ public class Tekstbrukergrensesnitt {
 //      spillEnPerson(spillere[tur]);
       
       //Opdater sum
-      yatzy.getBrett().setVerdi(6, tur, OppdateringUtility.sum(tur, yatzy.getBrett()));
+     // yatzy.getBrett().setVerdi(6, tur, OppdateringUtility.sum(tur, yatzy.getBrett()));
 
-      yatzy.getBrett().setVerdi(17, tur, OppdateringUtility.total(tur, yatzy.getBrett()));
+      //yatzy.getBrett().setVerdi(17, tur, OppdateringUtility.total(tur, yatzy.getBrett()));
 
       //Skriver ut brett
       System.out.println(yatzy.getBrett().toString());

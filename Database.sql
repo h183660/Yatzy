@@ -16,7 +16,7 @@ CREATE TABLE yatzy
 (
 	id VARCHAR(20),
 	antall INTEGER,
-	brett JSON,
+	brett integer[][],
 	PRIMARY KEY (id)
 );
 

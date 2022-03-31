@@ -18,7 +18,7 @@ public class Yatzy {
 	@Id
 	private String id;
 	private Integer antall;
-	private Brett brett;
+	private int[][] brett;
 	
 	@ManyToMany
 	@JoinTable(
@@ -31,11 +31,8 @@ public class Yatzy {
 		
 	}
 
-	public Yatzy(Spiller[] spillere) {
 
-	}
-
-	public Brett getBrett() {
+	public int[][] getBrett() {
 		return brett;
 	}
 
@@ -63,10 +60,8 @@ public class Yatzy {
 		this.spillere = spillere;
 	}
 
-	public void setBrett(Brett brett) {
+	public void setBrett(int[][] brett) {
 		this.brett = brett;
 	}
 	
-	
-
 }
